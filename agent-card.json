@@ -1,0 +1,81 @@
+{
+  "name": "csoai",
+  "description": "The FAA for AI — independent governance institution, multi-jurisdiction crosswalk.",
+  "url": "https://csoai.org",
+  "version": "0.1.0",
+  "provider": {
+    "organization": "CSOAI-ORG",
+    "url": "https://csoai.org"
+  },
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text",
+    "json"
+  ],
+  "skills": [
+    {
+      "id": "csoai-governance-crosswalk-mcp",
+      "name": "csoai-governance-crosswalk-mcp",
+      "description": "Tool: csoai-governance-crosswalk-mcp (part of csoai.org hive L5)"
+    },
+    {
+      "id": "a2a-governance-bridge-mcp",
+      "name": "a2a-governance-bridge-mcp",
+      "description": "Tool: a2a-governance-bridge-mcp (part of csoai.org hive L5)"
+    },
+    {
+      "id": "csrd-compliance-mcp",
+      "name": "csrd-compliance-mcp",
+      "description": "Tool: csrd-compliance-mcp (part of csoai.org hive L5)"
+    },
+    {
+      "id": "dora-compliance-mcp",
+      "name": "dora-compliance-mcp",
+      "description": "Tool: dora-compliance-mcp (part of csoai.org hive L5)"
+    },
+    {
+      "id": "eu-ai-act-compliance-mcp",
+      "name": "eu-ai-act-compliance-mcp",
+      "description": "Tool: eu-ai-act-compliance-mcp (part of csoai.org hive L5)"
+    },
+    {
+      "id": "a2a-mesh",
+      "name": "Cross-hive A2A call",
+      "description": "Can call other MEOK hives via A2A (with user consent)"
+    },
+    {
+      "id": "memoria-commit",
+      "name": "Versioned memory commit",
+      "description": "Commits to memoria namespace 'csoai'"
+    }
+  ],
+  "securitySchemes": {
+    "oauth2": {
+      "type": "oauth2",
+      "flows": {
+        "authorizationCode": {
+          "authorizationUrl": "https://csoai.org/oauth/authorize",
+          "tokenUrl": "https://csoai.org/oauth/token",
+          "scopes": {
+            "read": "Read hive state",
+            "write": "Invoke tools (x402-metered)",
+            "audit": "Read audit trail"
+          }
+        }
+      }
+    }
+  },
+  "x402Pricing": {
+    "enabled": true,
+    "currency": "USD",
+    "amount": "1.50",
+    "freeCallsPerIPPerDay": "0"
+  }
+}

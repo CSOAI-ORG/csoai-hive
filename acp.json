@@ -1,0 +1,24 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "csoai",
+    "description": "The FAA for AI \u2014 independent governance institution, multi-jurisdiction crosswalk.",
+    "version": "0.1.0",
+    "provider": "CSOAI-ORG",
+    "interfaces": [
+      {
+        "type": "a2a",
+        "url": "https://csoai.org"
+      }
+    ],
+    "capabilities": [
+      "csoai-governance-crosswalk-mcp",
+      "a2a-governance-bridge-mcp",
+      "csrd-compliance-mcp",
+      "dora-compliance-mcp",
+      "eu-ai-act-compliance-mcp",
+      "a2a-mesh",
+      "memoria-commit"
+    ]
+  }
+}

@@ -45,7 +45,7 @@ Per L6 (hermes.yml), this hive will only call MCPs from:
 
 ## Revenue
 
-£1,499/mo Enterprise suite, £5,000 48h audit (per DOMAINS.md).
+£1,499/mo Enterprise suite, £5,000 48h audit (per DOMAINS.md). Per-call x402 re-priced $1.50→$3.00 (high-trust audit, justified per [[meok-deep-audit-2026-06-08]] P1-2).
 
 ## Related
 

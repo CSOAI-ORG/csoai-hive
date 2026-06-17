@@ -1,0 +1,35 @@
+{
+  "name": "csoai.org",
+  "title": "CSOAI — Chief Security Officer AI",
+  "description": "Centralised AI security oversight, threat modelling, and incident coordination for the MEOK federation.",
+  "cluster": "TRUST-GOVERNANCE",
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://csoai.org/",
+  "agent": {
+    "protocol": "model-context-protocol",
+    "version": "1.0",
+    "mcp_endpoint": "https://mcp.csoai.org/v1",
+    "capabilities": ["reasoning", "tool_use", "context_management", "multi_agent_coordination"],
+    "authentication": {
+      "scheme": "oauth2",
+      "token_url": "https://auth.sov3.meok.ai/oauth/token",
+      "authorization_url": "https://auth.sov3.meok.ai/oauth/authorize",
+      "scopes": ["agent:read", "agent:write", "mcp:invoke"]
+    },
+    "identity": {
+      "did": "did:meok:csoai.org",
+      "verification_method": "did:meok:csoai.org#keys-1"
+    }
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "MEOK Empire",
+    "url": "https://meok.ai/"
+  },
+  "clusterOf": {
+    "@type": "Organization",
+    "name": "TRUST-GOVERNANCE",
+    "url": "https://csoai.org/"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "csoai.org",
+  "title": "CSOAI — Chief Security Officer AI",
+  "description": "Centralised AI security oversight, threat modelling, and incident coordination for the MEOK federation.",
+  "cluster": "TRUST-GOVERNANCE",
+  "servers": [
+        { "id": "threat-intel-mcp.sov3.meok.ai", "url": "https://threat-intel-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "incident-response-mcp.sov3.meok.ai", "url": "https://incident-response-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" },
+    { "id": "compliance-mcp.sov3.meok.ai", "url": "https://compliance-mcp.sov3.meok.ai/", "protocol": "mcp-1.0" }
+  ],
+  "registrar": "https://mcp-registry.sov3.meok.ai/register",
+  "protocol": "https://openMCP.ai/protocol",
+  "$schema": "https://openMCP.ai/schemas/mcp-server-list.json"
+}
